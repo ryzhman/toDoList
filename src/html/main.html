@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/todo.css">
+    <title>Create your own todo list!</title>
+</head>
+<body>
+
+<h2> You can create you own todo list here!</h2>
+<p>
+    <button id="modal_open">Add element</button>
+</p>
+
+<div id="list"></div>
+
+<p>
+    <button id="modal_open1">Add element</button>
+</p>
+
+<div id="modal_wrapper">
+    <div id="modal_window">
+
+        <div id="modalWindowHeader"><a id="modal_close">close <b>X</b></a></div>
+
+        <p>Enter todo details:</p>
+
+        <form id="add_task" action="#">
+            <p><label>Title<strong>*</strong><br>
+                <input type="text" autofocus required id="title" minlength="6" value="" placeholder="Enter title here..." class="inputs"></label></p>
+            <p><label>Description<strong>*</strong><br>
+                <input type="text" placeholder="Enter description here..." minlength="10" height="48" id="description" value="" class="inputs"></label></p>
+            <p><label>Priority<br>
+                <input type="number" size="10%" id="priority" placeholder="Enter the priority level here..." value="" class="inputs"></label></p>
+            <p><input type="submit" value="Add task"></p>
+        </form>
+
+    </div>
+</div>
+
+<script src="../js/todo.js"></script>
+</body>
+</html>
